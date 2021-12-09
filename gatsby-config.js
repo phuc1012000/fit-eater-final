@@ -3,5 +3,9 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "FitEater",
   },
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+  ],
 };

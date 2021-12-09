@@ -1,0 +1,19 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 50px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer > :nth-child(3) {
+    z-index: 1000;
+    position: relative;
+    bottom: 10px;
+    background-color: white;
+    /* border: solid 5px white; */
+    border-radius: 100%;
+}

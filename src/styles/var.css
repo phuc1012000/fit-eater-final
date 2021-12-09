@@ -1,0 +1,10 @@
+:root {
+    /* --primary-background:  #494c4e;
+    --secondary-background: #010101;
+    --content-color : #1D1E22;
+    --primary-text-color : white;
+    --accent-color: #eca400 ; */
+    --surface-cl: whitesmoke;
+    --max-content-width: 1180px;
+    --offset-horizontal: max(calc(50vw - var(--max-content-width) /2), 10px)
+}

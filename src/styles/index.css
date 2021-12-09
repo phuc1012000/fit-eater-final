@@ -1,0 +1,50 @@
+@import "var.css";
+@import "text.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+html, 
+body {
+    background-color: var(--surface-cl);
+    font-size: 18px;
+}
+
+
+
+
+li {
+    list-style-type : none;
+}
+
+li > a {
+    display: block;
+}
+
+a {
+    color: var(--text-cl);
+    text-decoration: none; /* no underline */
+  }
+  
+
+
+.pill {
+    display: flex;
+    align-items: center;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+    padding: 5px 20px;
+    border: none;
+}
+
+.pill.active {
+    background-color: red;
+}
+
+main {
+    padding: 60px 0;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+}
