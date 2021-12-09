@@ -17,3 +17,22 @@ footer > :nth-child(3) {
     /* border: solid 5px white; */
     border-radius: 100%;
 }
+
+.active {
+    /* color: red; */
+    position: relative;
+}
+
+.active::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    /* border: solid 1px; */
+    height: 4px;
+    background-color: black;
+}
+
+

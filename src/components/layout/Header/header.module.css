@@ -11,6 +11,10 @@ header {
     z-index: 1000;
 }
 
+header > :nth-child(2) {
+    padding-right: 5px;
+}
+
 #Location {
     display: flex;
     align-items: center;
