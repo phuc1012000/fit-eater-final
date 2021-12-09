@@ -1,12 +1,10 @@
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
-import { useEffect } from "react"
 import { useState } from "react"
 import * as IndexStyle from '../components/pages/index.module.css'
-import Header from '../components/Header/Header'
 import { HorizontalList, ItemCard, DemoItem, VerticalList } from "../components/Utility/Utility"
 import { ItemHorizontalList } from "../components/ItemList"
-import Footer from "../components/Footer/Footer"
+// import Layout from "../components/layout"
 // import { AmplifyProvider } from '@aws-amplify/ui-react';
 // const IndexPage = () => {
 //   const [is_phone, set_phone] = useState(false)
@@ -112,21 +110,17 @@ const ItemList = () => {
 const IndexPage = () => {
   return (
     <>
-      <Header />
-      <main>
-        <Intro />
-        <FoodCategory />
-        <ItemHorizontalList />
-        <BrandHorizontalList />
-        <ItemList />
-      </main>
-      <Footer />
+          <Intro />
+          <FoodCategory />
+          <ItemHorizontalList />
+          <BrandHorizontalList />
+          <ItemList />
     </>
   )
 }
 
-const Authenticated = () => {
+// const Authenticated = () => {
 
-}
+// }
 
 export default IndexPage

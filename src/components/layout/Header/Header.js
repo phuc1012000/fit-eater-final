@@ -18,8 +18,7 @@ const Header = (props) => {
                 <div >
                     <span>Tìm kiếm tại:</span>
                     <div>
-                        {/* Bách Khoa Cơ Sở 1 */}
-                        {window.location.href}
+                        Bách Khoa Cơ Sở 1
                     </div>
                 </div>
             </div>
