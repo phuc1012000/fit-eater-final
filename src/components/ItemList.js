@@ -1,18 +1,14 @@
 import React from "react";
 import { HorizontalList, ItemCard } from "./Utility/Utility";
 
-const ItemHorizontalList = () => {
+const ItemHorizontalList = ({data}) => {
     return (
       <div>
         <h2>
           Món Ngon Nổi Bật
         </h2>
         <HorizontalList>
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
+          {data.map(e => <ItemCard item={e} />)}
         </HorizontalList>
       </div>
     )

@@ -27,14 +27,18 @@ const HomeBtn = ({page_path}) => {
     )
 }
 
+const get_current_path = () => {
+    const url_tokens = window.location.href.split('/')
+    return url_tokens[url_tokens.length-1]
+}
+
 const Footer = () => {
-    const [page_path, set_path] = useState('')
+    const [page_path, set_path] = useState(get_current_path())
 
     useEffect(() => {
         return globalHistory.listen(({ action }) => {
             if (action === 'PUSH') {
-                const url_tokens = window.location.href.split('/')
-                set_path(url_tokens[url_tokens.length-1])
+                set_path(get_current_path())
             }
         })
     })

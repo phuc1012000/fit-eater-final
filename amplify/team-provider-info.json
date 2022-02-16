@@ -1,15 +1,26 @@
 {
-  "dev": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-fiteaterfinal-dev-193203-authRole",
-      "UnauthRoleArn": "arn:aws:iam::078138515994:role/amplify-fiteaterfinal-dev-193203-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::078138515994:role/amplify-fiteaterfinal-dev-193203-authRole",
-      "Region": "ap-southeast-1",
-      "DeploymentBucketName": "amplify-fiteaterfinal-dev-193203-deployment",
-      "UnauthRoleName": "amplify-fiteaterfinal-dev-193203-unauthRole",
-      "StackName": "amplify-fiteaterfinal-dev-193203",
-      "StackId": "arn:aws:cloudformation:ap-southeast-1:078138515994:stack/amplify-fiteaterfinal-dev-193203/dc2ef500-5822-11ec-8480-0ae234cd9c5c",
-      "AmplifyAppId": "dyxle573ronmh"
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-fiteaterfinal-dev-234817-authRole",
+            "UnauthRoleArn": "arn:aws:iam::078138515994:role/amplify-fiteaterfinal-dev-234817-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::078138515994:role/amplify-fiteaterfinal-dev-234817-authRole",
+            "Region": "ap-southeast-1",
+            "DeploymentBucketName": "amplify-fiteaterfinal-dev-234817-deployment",
+            "UnauthRoleName": "amplify-fiteaterfinal-dev-234817-unauthRole",
+            "StackName": "amplify-fiteaterfinal-dev-234817",
+            "StackId": "arn:aws:cloudformation:ap-southeast-1:078138515994:stack/amplify-fiteaterfinal-dev-234817/fc4c9c90-59d8-11ec-8480-0ae234cd9c5c",
+            "AmplifyAppId": "d3jv5dlt8zak6a"
+        },
+        "categories": {
+            "auth": {
+                "fiteaterfinal0434a4a3": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d3jv5dlt8zak6a",
+                    "type": "manual"
+                }
+            }
+        }
     }
-  }
 }

@@ -1,5 +1,5 @@
 .horizontal_list > .short_card > .card__img {
-    border-radius: 70%;
+    border-radius: 50%;
     position: relative;
 }
 
@@ -10,9 +10,46 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin: 10px;
     padding: 3%;
+}
+
+.price {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding: 3px;
+    border-radius: 30%;
+    left: 0;
+    color: green;
+    font-weight: 900;
+}
+
+.kcal {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: rgb(226, 33, 27);
+    font-weight: 600;
+}
+
+.rating {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    color: rgb(228, 152, 13);
+    font-weight: 700;
+    border-radius: 100%;
+}
+
+.short_card > * {
+    flex :auto;
+}
+
+.short_card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+
 }
 
 .horizontal_list {

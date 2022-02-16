@@ -1,0 +1,286 @@
+﻿- meta:
+    id: 2
+  name: Xôi
+  description: Một kênh cung cấp tinh bột khác ngoài cơm. Xôi đi bạn ơi, chỉ với 8000, tiện lợi và dinh dưỡng.
+  price: 8000
+  kcal: 130
+  address: Căng Tin Khu A
+  img : ./images/xoi.jpg
+  brand : can_tin_A
+  rating: 4.0
+  food_category: an_phu
+- meta:
+     id: 3
+  name: Phở
+  description: Trung bình, mỗi tô phở chứa khoảng 350 -500 calo. Với 30000 mua được đặc sản VN top 20 thế giới đây nè.
+  price: 30000
+  kcal:  400
+  address: Phở Thiên Ân Làng đại học
+  img: ./images/1.jpg
+  brand: 
+  rating: 4.9
+  food_category: an_chinh
+- meta:
+     id: 4
+  name: Cơm Nắm Cá Ngừ Cay
+  description: Lợi ích tuyệt vời của cá ngừ, ngăn ngừ xơ vữa động mạch lại còn giảm cholesterol “xấu”. Cơm nắm mềm dẻo cá hồi tươi mới, thử ngay thôi nào.
+  price: 15000
+  kcal:  294
+  address: Ministop tại KTX Khu B - ĐHQG-HCM
+  img: ./images/22.jpg
+  brand: circle_k
+  rating: 5.0
+  food_category: an_chinh
+- meta:
+     id: 5
+  name: Mì Trộn Trứng Chiên
+  description: Có khoảng 72 nguồn calo được cung cấp trong một quả trứng. Mì trộn trứng chiên - món ăn đơn giản lại giàu năng lượng.
+  price: 19000
+  kcal:  540
+  address: Circlr K tại ĐHBK CS2
+  img: ./images/24.png
+  brand: circle_k
+  rating: 4.0
+  food_category: an_chinh
+- meta:
+     id: 6
+  name: Cơm sườn trứng
+  description: Trung bình trong 1 đĩa cơm tấm sườn trứng có 527 calo, trong đó khoảng 13.3 g hàm lượng chất béo.
+  price: 25000
+  kcal:  520
+  address: Cơm Tấm Ngô Quyền - Làng ĐH
+  img: ./images/21.jpg
+  brand: circle_k
+  rating: 4.5
+  food_category: an_chinh
+- meta:
+     id: 7
+  name: Cơm tấm chả
+  description: Bạn biết không, 1 đĩa cơm tấm chả có chứa 592 calo và có khoảng 18.1 gam chất béo, chuẩn bị đầy đủ năng lượng cho cả ngày dài làm việc.
+  price: 25000
+  kcal:  650
+  address: Cơm Tấm Ngô Quyền - Làng ĐH
+  img: ./images/20.jpg
+  brand: ministop
+  rating: 5.0
+  food_category: an_chinh
+- meta:
+     id: 8
+  name: Lẩu chay Làng ĐH (3 người)
+  description: Không cần nói nhiều thì có lẽ bạn cũng biết lợi ích của chế độ ăn chay. Lẩu chay không có chất béo động vật mà chỉ có chất béo thực vật, dễ dàng hấp thụ vào cơ thể hơn.
+  price: 90000
+  kcal:  500
+  address: Lẩu chay Hữu Duyên
+  img: ./images/23.jpg
+  brand: Hữu Duyên
+  rating: 4.3
+  food_category: an_chinh
+- meta:
+     id: 9
+  name: Bún bò
+  description: Tuần này bạn đã ăn đủ vitamin B chưa. Chưa thì ăn Bún Bò là gấp đôi vitamin B rồi :>> Nghiêm túc nè, bún bò sẽ cung cấp hơn 500 calories, đủ năng lượng cho hôm nay chưa nào.
+  price: 30000
+  kcal:  534
+  address: Bún bò Giáo Toàn
+  img: ./images/16.jpg
+  brand: Giáo Toàn
+  rating: 4.4
+  food_category: an_chinh
+- meta:
+     id: 10
+  name: Cơm chiên
+  description: Cơm chiên huyền thoại ngập tràn topping cung cấp năng lượng cho cả ngày dài, đặt ngay thôi nào.
+  price: 25000
+  kcal:  650
+  address: Cơm chiên Hiền Ký 3
+  img: ./images/19.jpg
+  brand: Hiền Ký
+  rating: 4.6
+  food_category: an_chinh
+- meta:
+     id: 11
+  name: Bánh Giò (thịt truyền thống)
+  description: Hôm nay vẫn còn thiếu năng lượng thì hãy bổ sung 1 cái bánh giò nè. chiếc bánh 150gr thôi nhưng đủ năng lượng cho bạn rồi đấy.
+  price: 12000
+  kcal:  245
+  address: Family Mart tại KTX Khu B - ĐHQG-HCM
+  img: ./images/5.jpg
+  brand: Family Mart
+  rating: 4.3
+  food_category: an_nhe
+- meta:
+     id: 12
+  name: Bánh bao nhân thịt
+  description: Theo kênh tra cứu hàm lượng calo Fatsecret thì trung bình 1 bánh bao nhỏ chứa khoảng 22kcal được làm từ bột mì và bột nở. Bên ngoài vỏ mềm mại dai ngọt, bên trong nhân thịt đậm đà, u là trời thơm ngon khó cưỡng.
+  price: 15000
+  kcal:  325
+  address: Circle K tại ĐHBK CS2
+  img: ./images/13.png
+  brand: cirle_k
+  rating: 4.5
+  food_category: an_nhe
+- meta:
+     id: 13
+  name: Xôi
+  description: Một kênh cung cấp tinh bột khác ngoài cơm. Xôi đi bạn ơi, chỉ với 8000, tiện lợi và dinh dưỡng.
+  price: 8000
+  kcal:  130
+  address: Cửa hàng xôi cổng khu A, KTX ĐHQG-HCM
+  img: ./images/11.webp
+  brand: KTX khu A
+  rating: 4.8
+  food_category: an_nhe
+- meta:
+     id: 14
+  name: Bánh mì sữa Kinh Đô
+  description: Nhanh chóng gọn nhẹ, đủ năng lượng trong 1 buổi sáng
+  price: 8000
+  kcal:  75
+  address: Circle K tại ĐHBK CS2
+  img: ./images/15.png
+  brand: 
+  rating: 4.6
+  food_category: an_nhe
+- meta:
+     id: 15
+  name: Bánh mì thịt
+  description: Một món ăn mang đậm bản sắc dân tộc - bánh mì + 1 trứng ốp la, gia vị, rau ngò chứa tổng cộng khoảng 325 calo.
+  price: 12000
+  kcal:  400
+  address: Bánh mì trạm bus khu A - Làng ĐH, ĐHQG-HCM
+  img: ./images/4.png
+  brand: KTX khu A
+  rating: 5.9
+  food_category: an_nhe
+- meta:
+     id: 16
+  name: Chè thái
+  description: Thơm thơm giòn giòn, vừa có trái cây. Ăn chè với nguyên liệu từ trái cây không lo tăng cân nè.
+  price: 15000
+  kcal:  200
+  address: Chè Chương Dương, Thủ Đức
+  img: ./images/18.jpg
+  brand: Chương Dương
+  rating: 4.7
+  food_category: an_vat
+- meta:
+     id: 17
+  name: Sữa chua nếp cẩm
+  description: Hợp chất Ergosterol và Lovastatin trong men nếp cẩm giúp bảo vệ, ngăn ngừa các bệnh nguy hiểm cho tim mạch, bổ máu và còn làm đẹp da.
+  price: 18000
+  kcal:  166
+  address: Sữa chua nếp cẩm Sài Gòn
+  img: ./images/27.jpg
+  brand: Sài Gòn
+  rating: 4.6
+  food_category: an_vat
+- meta:
+     id: 18
+  name: Sinh tố sữa chua
+  description: Sữa chua có đường có khoảng 105 calo, trong khi loại ít đường là 87 calo. Hỗ trợ giảm cân tuyệt vời và hỗ trợ tiêu hóa tốt.
+  price: 15000
+  kcal:  105
+  address: Sinh tố 16B
+  img: ./images/26.jpg
+  brand: 16B
+  rating: 4.7
+  food_category: an_vat
+- meta:
+     id: 19
+  name: Sinh tố bơ
+  description: Một ly sinh tố bơ với 100g thịt quả và 100 ml sữa tươi không đường (chứa 75 calo) sẽ chứa khoảng 235 calo
+  price: 18000
+  kcal:  120
+  address: Sinh tố 16B
+  img: ./images/25.jpg
+  brand: 16B
+  rating: 4.6
+  food_category: an_vat
+- meta:
+     id: 20
+  name: Bông lan trứng muối size S
+  description: Còn đang suy nghĩ chưa đặt là sợ mập chứ gì, không sao đâu, tập thể dục bù nha, mình đã lên lịch cho bạn rồi.
+  price: 35000
+  kcal:  350
+  address: Bông lan trứng muối quận 9 & Thủ Đức
+  img: ./images/14.jpg
+  brand: 
+  rating: 4.5
+  food_category: an_vat
+- meta:
+     id: 22
+  name: Trà chanh
+  description: Một ly trà chanh đơn giản, tốt cho tiêu hóa lại cải thiện tinh thần, chọn trà chanh cho hôm nay thôi
+  price: 13000
+  kcal:  40
+  address: Siêu thị Bình Dân, tòa C3-C4, KTX Khu B - ĐHQG-HCM
+  img: ./images/8.jpg
+  brand: Siêu thị bình dân
+  rating: 4.8
+  food_category: do_uong
+- meta:
+     id: 23
+  name: Chanh dây
+  description: Chanh dây là một nguồn cung cấp dinh dưỡng và khoáng chất dồi dào, đặc biệt là chất xơ, vitamin C và vitamin A. Ước tính trong một quả chanh dây tím có chứa 17 calo.
+  price: 15000
+  kcal:  17
+  address: Siêu thị Bình Dân, tòa C3-C4, KTX Khu B - ĐHQG-HCM
+  img: ./images/17.jpg
+  brand: 
+  rating: 4.4
+  food_category: do_uong
+- meta:
+     id: 24
+  name: Milo
+  description: Sự kết hợp hoàn hảo từ hương vị thơm ngon độc đáo của cacao và nguồn dưỡng chất thiên nhiên giàu đạm và các chất dinh dưỡng
+  price: 10000
+  kcal:  110
+  address: Family Mart tại KTX Khu B - ĐHQG-HCM
+  img: ./images/2.png
+  brand: Family Mart
+  rating: 5.0
+  food_category: do_uong
+- meta:
+     id: 25
+  name: Cà Phê Việt Nam Sữa Đá –( Size S)
+  description: 1 ly cho cả ngày tỉnh táo, là tri kỷ của biết bao thế hệ, còn chân chờ gì mà không cùng bạn bè chill với những tách cà phê
+  price: 10000
+  kcal:  94
+  address: Circle K tại ĐHBK CS2
+  img: ./images/3.jpg
+  brand: circle_k
+  rating: 4.7
+  food_category: do_uong
+- meta:
+     id: 26
+  name: Sữa lúa mạch socola Ovaltine
+  description: Với Cholin giúp hỗ trợ chức năng não bộ, Vitamin D3 giúp cơ thể hấp thu Canxi tốt hơn và Vitamin & khoáng chất.
+  price: 9000
+  kcal:  141
+  address: Ministop tại KTX Khu B - ĐHQG-HCM
+  img: ./images/10.jpg
+  brand: Ministop
+  rating: 4.5
+  food_category: do_uong
+- meta:
+     id: 27
+  name: Trà sữa
+  description: Trà sữa uống thì uống thôi, cần lí do làm gì. Mai lại có động lực chạy bộ bù thêm 30 phút.
+  price: 20000
+  kcal:  450
+  address: Trà sữa APA, Linh Chiểu, Thủ Đức
+  img: ./images/28.jpeg
+  brand: APA
+  rating: 4.6
+  food_category: do_uong
+- meta:
+     id: 28
+  name: Trà đào cam sả
+  description: Chút truyền thống pha lẫn hiện đại với mùi hương đặc trưng. Trong trà đào cam sả có chất chống oxy hóa mạnh mẽ và các hợp chất polyphenolic có thể ngăn ngừa quá trình lão hóa của da. 
+  price: 20000
+  kcal:  60
+  address: Trà Đào Cam Sả đường Võ Văn Ngân, Thủ Đức
+  img: ./images/12.jpg
+  brand: 
+  rating: 4.8
+  food_category: do_uong

@@ -11,8 +11,14 @@ header {
     z-index: 1000;
 }
 
-header > :nth-child(2) {
+#MenuBar button {
     padding-right: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+#MenuBar button:hover {
+    background-color: whitesmoke;
 }
 
 #Location {
@@ -25,3 +31,50 @@ header > :nth-child(2) {
     display: grid;
 }
 
+#MenuBar > ul{
+    position: fixed;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    left: 0;
+    top: -10px;
+    z-index: 1000;
+    width: 100vw;
+    /* padding-top: 20px; */
+}
+
+#MenuBar a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#MenuBar > ul.hidden {
+    display: none !important;
+} 
+
+#MenuBar > ul.display {
+    display: block !important;
+}
+
+#MenuBar > ul > button {
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+#MenuBar > ul > li {
+    margin: 30px 0;
+    margin-right: 80px;
+}
+
+#MenuBar > ul > li:after {
+    content: '';
+    display: block;
+    width: 100vw;
+    background-color: black;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    margin-top: 15px;
+}

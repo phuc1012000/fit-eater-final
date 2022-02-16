@@ -1,39 +1,28 @@
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import { useState } from "react"
-import * as IndexStyle from '../components/pages/index.module.css'
 import { HorizontalList, ItemCard, DemoItem, VerticalList } from "../components/Utility/Utility"
 import { ItemHorizontalList } from "../components/ItemList"
-// import Layout from "../components/layout"
-// import { AmplifyProvider } from '@aws-amplify/ui-react';
-// const IndexPage = () => {
-//   const [is_phone, set_phone] = useState(false)
-//   const [promo, set_promo] = useState(false)
+import { graphql } from "gatsby"
+import { useEffect } from "react"
+import { Auth } from "aws-amplify"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-//   useEffect(() => {
-//     set_phone(window.screen.width < 480)
-//   }, [])
-
-//   return (
-//     <>
-//       {
-//         (is_phone | promo) ?
-//           <div>
-//             <Header />
-
-//           </div> : null
-//       }
-//     </>
-//   )
-// }
 
 const Intro = () => {
-  const user = { name: 'Phúc', score: 80, voucher: 1 }
+  const [user, set] = useState({ name: '', score: 0, voucher: 0 })
+
+  useEffect(async () => {
+    Auth.currentAuthenticatedUser().then(({ username }) => {
+      set({ name: username, score: 50, voucher: 1 })
+
+    })
+  }, [])
 
   return (
     <div>
       <h3>Hi, {user.name}</h3>
-      <p>Bạn đã có được: {user.score} điểm và {user.voucher} voucher</p>
+      <p>Bạn đã có được: <em>{user.score} điểm</em>  và {user.voucher} voucher</p>
       <p>Bạn đang tìm kiếm món ăn nào?? </p>
     </div>
   )
@@ -41,86 +30,116 @@ const Intro = () => {
 
 
 
-const FoodCategory = () => {
-  const [CategoryList, update] = useState([
-    { 'content': 'Ăn Vặt' },
-    { 'content': 'Ăn Sáng', active: true },
-    { 'content': 'Ăn Trưa' },
-    { 'content': 'Ăn Tối' }
-  ])
-
-  const action = (key) => {
-    let list = CategoryList.map(e => e.content)
-    list = list.filter(e => e !== key.content)
-    list.unshift(key.content)
-    list = list.map(e => {
-      return { 'content': e }
-    })
-    list[0]['active'] = true
-
-    update(list)
-  }
-
+const FoodCategory = ({data}) => {
   return (
-    <div>
       <HorizontalList>
-        {CategoryList.map(e => <DemoItem {...e} action={action} />)}
+        {data.map(e => <DemoItem item={e} />)}
       </HorizontalList>
-    </div>
   )
 }
 
-const BranchLogo = () => {
+const BranchLogo = ({ item }) => {
+  const image = getImage(item.img)
   return (
-    <StaticImage src='../images/circleK.png' className='logo' objectFit='contain'/>
+      <GatsbyImage image={image} alt={item.name} className='logo' objectFit='contain'  />
   )
 }
 
-const BrandHorizontalList = () => {
+const BrandHorizontalList = ({ data }) => {
   return (
     <div>
       <h2>
         Thương Hiệu Thân Quen
       </h2>
       <HorizontalList>
-        <BranchLogo />
-        <BranchLogo />
-        <BranchLogo />
-        <BranchLogo />
-        <BranchLogo />
-        <BranchLogo />
+        {data.map(e => <BranchLogo item={e} />)}
       </HorizontalList>
     </div>
   )
 }
 
-const ItemList = () => {
+const ItemList = ({ data }) => {
   return (
     <VerticalList>
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
+      {data.map(e => <ItemCard item={e} />)}
     </VerticalList>
   )
 }
 
 
-const IndexPage = () => {
+
+const IndexPage = ({ data }) => {
+  const products = data.allProduct.edges.map(e => e['node'])
+  const recommended_products = products.filter(e => e.rating > 4.2)
+  const category = data.allFood.edges.map(e => e['node'])
+  const brands = data.allBrand.edges.map(e => e['node'])
+
   return (
     <>
-          <Intro />
-          <FoodCategory />
-          <ItemHorizontalList />
-          <BrandHorizontalList />
-          <ItemList />
+      <Intro />
+      <FoodCategory data={category} />
+      <ItemHorizontalList data={recommended_products} />
+      <BrandHorizontalList data={brands} />
+      <ItemList data={products} />
     </>
   )
 }
 
-// const Authenticated = () => {
-
-// }
-
 export default IndexPage
+
+export const query = graphql`
+    {
+    allProduct {
+      edges {
+        node {
+          name
+          description
+          kcal
+          img {
+            childImageSharp {
+            gatsbyImageData(
+              width: 500
+              height: 300
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )} 
+          }
+          price
+          rating
+        }
+      }
+    }
+    allBrand {
+    edges {
+      node {
+        name
+        title
+        img {
+            childImageSharp {
+            gatsbyImageData(
+              width: 60
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )} 
+          }
+      }
+    }
+  }
+  allFood {
+    edges {
+      node {
+        name
+        title
+        img {
+            childImageSharp {
+            gatsbyImageData(
+              width: 30
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )} 
+          }
+      }
+    }
+  }
+    }
+`

@@ -1,0 +1,6 @@
+- name: circle_k
+  img : ./images/circleK.png
+  title: Circle K
+- name : ministore
+  img : ./images/circleK.png
+  title: MiniStore 
